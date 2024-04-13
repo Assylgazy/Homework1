@@ -12,5 +12,8 @@ namespace Reddit.Models
         public ICollection<Comment> Comments { get; set; } = new List<Comment>();
         public int  Upvotes { get; set; } = 0;
         public int Downvotes { get; set; } = 0;
+
+        public Community Community { get; set; }
+        public int CommunityId { get; set; }
     }
 }
